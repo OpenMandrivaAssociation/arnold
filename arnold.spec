@@ -84,3 +84,33 @@ rm -rf %{buildroot}
 %{clean_menus}
 %endif
 
+
+
+%changelog
+* Fri Jul 29 2011 Andrey Bondrov <abondrov@mandriva.org> 0.20090317-4mdv2012.0
++ Revision: 692179
+- imported package arnold
+
+
+* Mon Jul 18 2011 Andrey Bondrov <bondrov@math.dvgu.ru> 0.20090317-4mdv2011.0
+- Port from PLF
+- Remove PLF reference
+
+* Sat Apr 18 2009 Guillaume Bedot <littletux@zarb.org> 0.20090317-1plf2009.1
+- New release including more 64bit fixes
+
+* Tue Jan 20 2009 Guillaume Bedot <littletux@zarb.org> 0.20081209-4plf2009.1
+- fixes for 64bit build
+
+* Tue Jan  6 2009 Guillaume Bedot <littletux@zarb.org> 0.20081209-3plf2009.1
+- add desktop file and icon
+
+* Mon Jan  5 2009 Guillaume Bedot <littletux@zarb.org> 0.20081209-2plf2009.1
+- better fix for --as-needed thing
+
+* Mon Jan  5 2009 Guillaume Bedot <littletux@zarb.org> 0.20081209-1plf2009.1
+- New release 09.12.2008
+- quick fix for the issue with --as-needed, and other fixes.
+
+* Wed Mar 19 2008 Guillaume Bedot <littletux@zarb.org> 0.20070919-1plf2008.1
+- First PLF package for arnold
