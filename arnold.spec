@@ -4,7 +4,7 @@ Name:			arnold
 Version:		0.%(sed -e 's/-//g' <<<%{verdate})
 Release:		%mkrel 4
 
-Summary:	Arnold - Amstrad CPC emulator
+Summary:	- Amstrad CPC emulator
 License:	GPLv2+
 #except amstrad roms.
 Group:		Emulators
