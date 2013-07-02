@@ -2,9 +2,9 @@ Name:			arnold
 %define altname		nurgle
 %define verdate		2009-03-17
 Version:		0.%(sed -e 's/-//g' <<<%{verdate})
-Release:		%mkrel 4
+Release:		5
 
-Summary:	- Amstrad CPC emulator
+Summary:	Amstrad CPC emulator
 License:	GPLv2+
 #except amstrad roms.
 Group:		Emulators
@@ -19,7 +19,6 @@ Source1:	%{name}-32.png
 
 BuildRequires:	SDL-devel
 BuildRequires:	gtk2-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Arnold "Nurgle" is an Amstrad CPC emulator for Linux.
@@ -39,7 +38,6 @@ It emulates from CPC 464 to CPC 6128+.
 %make
 
 %install
-rm -rf %{buildroot}
 #makeinstall
 install -d -m 0755 %{buildroot}/%{_gamesbindir}
 install -m 0644 ../%{name} %{buildroot}/%{_gamesbindir}
@@ -66,7 +64,6 @@ Categories=X-MandrivaLinux-MoreApplications-Emulators;Emulator;
 EOF
 
 %files
-%defattr(-,root,root)
 %doc ../README.FIRST ../gpl-spanish.htm ../*.txt ../*.linux ../docs/* ../extras/*
 %attr(0755,root,games) %{_gamesbindir}/%{name}
 %{_gamesdatadir}/%{name}
@@ -74,7 +71,6 @@ EOF
 %{_datadir}/applications/mandriva-%{name}.desktop
 
 %clean
-rm -rf %{buildroot}
 
 %if %mdkversion < 200900
 %post
