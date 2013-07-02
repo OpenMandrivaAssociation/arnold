@@ -18,7 +18,7 @@ Source1:	%{name}-32.png
 #Patch4:		%{name}-20081209-plf-various-warnings.patch
 
 BuildRequires:	SDL-devel
-BuildRequires:	gtk2-devel
+BuildRequires:	pkgconfig(gtk+-2.0)
 
 %description
 Arnold "Nurgle" is an Amstrad CPC emulator for Linux.
