@@ -4,7 +4,7 @@
 Summary:	Arnold - Amstrad CPC emulator
 Name:		arnold
 Version:	0.%(sed -e 's/-//g' <<<%{verdate})
-Release:	6
+Release:	7
 License:	GPLv2+
 #except amstrad roms
 Group:		Emulators
