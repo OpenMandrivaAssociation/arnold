@@ -8,7 +8,7 @@ Release:	7
 License:	GPLv2+
 #except amstrad roms
 Group:		Emulators
-Url:		http://arnold.berlios.de/
+Url:		https://arnold.berlios.de/
 Source0:	http://download.berlios.de/%{name}/%{name}-%{altname}-%{verdate}.tar.bz2
 Source1:	%{name}-32.png
 BuildRequires:	pkgconfig(sdl)
