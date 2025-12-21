@@ -11,6 +11,11 @@ Group:		Emulators
 Url:		https://arnold.berlios.de/
 Source0:	http://download.berlios.de/%{name}/%{name}-%{altname}-%{verdate}.tar.bz2
 Source1:	%{name}-32.png
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(sdl)
 BuildRequires:	pkgconfig(gtk+-2.0)
 
